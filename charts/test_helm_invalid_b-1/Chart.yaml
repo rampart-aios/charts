@@ -1,0 +1,9 @@
+annotations:
+  petuum.com/rampartComponent: "inputs:\n- name: hello \n  type: volume\noutputs:\n-
+    name: stave_sql_output\n  type: volume\n- name: *\n  type: pulsar \n"
+apiVersion: v2
+appVersion: 1.16.0
+description: A Helm chart for Kubernetes
+name: test_helm_invalid_b
+type: application
+version: 0.7.0

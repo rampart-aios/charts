@@ -1,0 +1,10 @@
+annotations:
+  petuum.com/rampartComponent: |
+    inputs: []
+    outputs: []
+apiVersion: v2
+appVersion: 1.16.0
+description: A Helm chart for Kubernetes
+name: test_helm_valid_a
+type: application
+version: 0.0.0

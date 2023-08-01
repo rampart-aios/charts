@@ -11,6 +11,21 @@ entries:
     urls:
     - https://github.com/rampart-aios/charts/releases/download/hello-0.1.0/hello-0.1.0.tgz
     version: 0.1.0
+  rampart:
+  - apiVersion: v2
+    appVersion: 2.3.0-dev.snapshot
+    created: "2023-07-31T22:07:20.895962-07:00"
+    dependencies:
+    - name: nfs-subdir-external-provisioner
+      repository: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
+      version: 4.0.14
+    description: Helm chart for Rampart
+    digest: 7f50779d941308057cf82ce06f40421012575e7a2233213a5bd9e5813dbc93b5
+    name: rampart
+    type: application
+    urls:
+    - https://github.com/rampart-aios/charts/releases/download/rampart-2.3.0/rampart-2.3.0.tgz
+    version: 2.3.0
   rampart-ui:
   - apiVersion: v2
     appVersion: 2.0.0-dev.snapshot
@@ -402,4 +417,4 @@ entries:
     urls:
     - https://github.com/rampart-aios/charts/releases/download/test_helm_valid_b-0.1.5/test_helm_valid_b-0.1.5.tgz
     version: 0.1.5
-generated: "2023-07-31T20:30:41.16084-07:00"
+generated: "2023-07-31T22:07:24.691329-07:00"

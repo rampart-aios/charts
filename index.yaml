@@ -11,6 +11,17 @@ entries:
     urls:
     - https://github.com/rampart-aios/charts/releases/download/hello-0.1.0/hello-0.1.0.tgz
     version: 0.1.0
+  rampart-ui:
+  - apiVersion: v2
+    appVersion: 2.0.0-dev.snapshot
+    created: "2023-07-31T20:30:37.509356-07:00"
+    description: A Helm chart rampart ui
+    digest: c8cf10c18d4218770057c2c61197949b65dd4074d03555612f311cf0556def51
+    name: rampart-ui
+    type: application
+    urls:
+    - https://github.com/rampart-aios/charts/releases/download/rampart-ui-0.2.0/rampart-ui-0.2.0.tgz
+    version: 0.2.0
   test_helm_invalid_a:
   - annotations:
       petuum.com/rampartComponent: "inputs:\n- name: hello* \n  type: volume\n- name:
@@ -391,4 +402,4 @@ entries:
     urls:
     - https://github.com/rampart-aios/charts/releases/download/test_helm_valid_b-0.1.5/test_helm_valid_b-0.1.5.tgz
     version: 0.1.5
-generated: "2023-05-31T16:59:05.310477-07:00"
+generated: "2023-07-31T20:30:41.16084-07:00"

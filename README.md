@@ -19,5 +19,5 @@ helm pull oci://ghcr.io/rampart-aios/rampart-ui-chart/rampart-ui --version 0.2.0
 ```
 git add .
 git commit -m "Added new chart!"
-git push
+git push --set-upstream origin my_feature
 ```

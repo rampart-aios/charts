@@ -1,9 +1,54 @@
 apiVersion: v1
 entries:
+  dhabi-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-31T14:41:04.864877+04:00"
+    dependencies:
+    - name: mbzuai-llm
+      repository: file://../mbzuai-llm
+      version: 0.1.0
+    - name: dhabi-backend
+      repository: file://../dhabi-backend
+      version: 0.1.0
+    - name: dhabi-client
+      repository: file://../dhabi-client
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 32e31c2d95026595d3450942556acae5e121bbccd7be855df1356dc14d8b12cb
+    name: dhabi-helm
+    type: application
+    urls:
+    - dhabi-helm-0.1.0-91079502.tgz
+    version: 0.1.0-91079502
+  fastchat-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-31T14:41:04.866045+04:00"
+    dependencies:
+    - name: fastchat-controller
+      repository: file://../fastchat-controller
+      version: 1.2.3
+    - name: worker-vicuna-13b
+      repository: file://../worker-vicuna-13b
+      version: 1.2.3
+    - name: worker-vicuna-7b
+      repository: file://../worker-vicuna-7b
+      version: 1.2.3
+    - name: fastchat-web
+      repository: file://../fastchat-web
+      version: 1.2.3
+    description: A Helm chart for Kubernetes
+    digest: 99fb0cdf4abbce1984afc327903a03e97533890a008d923bde3fc7fb50fbcd44
+    name: fastchat-helm
+    type: application
+    urls:
+    - fastchat-helm-1.2.3-4eed5e9b.tgz
+    version: 1.2.3-4eed5e9b
   rampart:
   - apiVersion: v2
     appVersion: 3.0.0-dev.snapshot
-    created: "2023-08-31T14:35:35.253961+04:00"
+    created: "2023-08-31T14:41:04.869113+04:00"
     dependencies:
     - name: nfs-subdir-external-provisioner
       repository: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
@@ -17,7 +62,7 @@ entries:
     version: 3.0.0-f0c30160
   - apiVersion: v2
     appVersion: 3.0.0-dev.snapshot
-    created: "2023-08-31T14:35:35.252592+04:00"
+    created: "2023-08-31T14:41:04.867393+04:00"
     dependencies:
     - name: nfs-subdir-external-provisioner
       repository: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
@@ -32,7 +77,7 @@ entries:
   rampart-ui:
   - apiVersion: v2
     appVersion: 2.0.0-dev.snapshot
-    created: "2023-08-31T14:35:35.254845+04:00"
+    created: "2023-08-31T14:41:04.869979+04:00"
     description: A Helm chart rampart ui
     digest: c8cf10c18d4218770057c2c61197949b65dd4074d03555612f311cf0556def51
     name: rampart-ui
@@ -42,7 +87,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.snapshot
-    created: "2023-08-31T14:35:35.254441+04:00"
+    created: "2023-08-31T14:41:04.869571+04:00"
     description: A Helm chart rampart ui
     digest: 1b2dcc1c746dcf36650cf511b54cbd3607bbd053d8433a1feddcf47b751d3116
     name: rampart-ui
@@ -56,7 +101,7 @@ entries:
         *\n  type: pulsar\noutputs:\n- name: stave_sql_output\n  type: volume\n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.256442+04:00"
+    created: "2023-08-31T14:41:04.871531+04:00"
     description: A Helm chart for Kubernetes
     digest: 6fb30251a13822c18349c07425e41fc47513f0576caada8c2c579cdfca0f5d72
     name: test_helm_invalid_a
@@ -76,7 +121,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.256184+04:00"
+    created: "2023-08-31T14:41:04.871272+04:00"
     description: A Helm chart for Kubernetes
     digest: 056b7c2e65b1a745ab2bb3d8f9339440bc398518fa8c2112f083a285f864b2e9
     name: test_helm_invalid_a
@@ -93,7 +138,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.255927+04:00"
+    created: "2023-08-31T14:41:04.871021+04:00"
     description: A Helm chart for Kubernetes
     digest: 6a419b053aabe103a64c49c960b5c2519f2ce8989ccd3913227ef79665bc7f5f
     name: test_helm_invalid_a
@@ -112,7 +157,7 @@ entries:
         somethingIrrelevant: foo
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.255568+04:00"
+    created: "2023-08-31T14:41:04.870672+04:00"
     description: A Helm chart for Kubernetes
     digest: 3277b50afb25756d1f5ae736d904c7ff1ce605d876fbd4e475934044e10f99f9
     name: test_helm_invalid_a
@@ -130,7 +175,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.255192+04:00"
+    created: "2023-08-31T14:41:04.870317+04:00"
     description: A Helm chart for Kubernetes
     digest: bb5b4fb98b7cbbec7d1f665e3334fa5fb41870deb915660d1b0ddf539e3f2cb4
     name: test_helm_invalid_a
@@ -146,7 +191,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.256755+04:00"
+    created: "2023-08-31T14:41:04.87186+04:00"
     description: A Helm chart for Kubernetes
     digest: af542b686ea3aba62b61d4582449854bf4f5e3fbfbe39159f3c1f7ad12dc2dfc
     name: test_helm_invalid_b
@@ -159,7 +204,7 @@ entries:
         name: \"*invalid*\"\n  type: volume\n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.257811+04:00"
+    created: "2023-08-31T14:41:04.872915+04:00"
     description: A Helm chart for Kubernetes
     digest: 908a642955911846375493252d3da93fed2ffa3c1482d3e3e732ff2554d6ddc6
     name: test_helm_invalid_b
@@ -172,7 +217,7 @@ entries:
         name: hello*\n  type: volume\n- name: h*\n  type: pulsar \n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.257554+04:00"
+    created: "2023-08-31T14:41:04.872655+04:00"
     description: A Helm chart for Kubernetes
     digest: 51d940242853cf4527aa6e45ee41b466369e3716028c6dd19991df4b89218a41
     name: test_helm_invalid_b
@@ -185,7 +230,7 @@ entries:
         name: stave_sql_output\n  type: volume\n- name: *\n  type: pulsar \n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.25737+04:00"
+    created: "2023-08-31T14:41:04.872468+04:00"
     description: A Helm chart for Kubernetes
     digest: c05af33ec686d8ddc43b734715ec8bb22dc86dcc7f6b54eec26858e1162dff1e
     name: test_helm_invalid_b
@@ -198,7 +243,7 @@ entries:
         input_2\n  type: not_a_type\noutputs:\n- name: stave_sql_output\n  type: volume\n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.2571+04:00"
+    created: "2023-08-31T14:41:04.872203+04:00"
     description: A Helm chart for Kubernetes
     digest: d132b587f46e34ceb6868099f8255b800838ce89aeba91f97773e95a06bfd9d3
     name: test_helm_invalid_b
@@ -212,7 +257,7 @@ entries:
         input_2\n  type: volume\n- name: input_3\n  type: pulsar\noutputs: [] \n"
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.261113+04:00"
+    created: "2023-08-31T14:41:04.874686+04:00"
     description: A Helm chart for Kubernetes
     digest: 77c9b68d2853b5df01aa9daeed94360d667d62dd6951ebab1c0ac4019af51f86
     name: test_helm_valid_a
@@ -236,7 +281,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.260768+04:00"
+    created: "2023-08-31T14:41:04.874396+04:00"
     description: A Helm chart for Kubernetes
     digest: 9ccf703793f96398eb0fb4c1238e53141f0fc8ffe5505ae329c07df898d87247
     name: test_helm_valid_a
@@ -260,7 +305,7 @@ entries:
           type: pulsar
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.258911+04:00"
+    created: "2023-08-31T14:41:04.873997+04:00"
     description: A Helm chart for Kubernetes
     digest: 59a40758d9fe36208286acddee726afaba61218ae99d4dd675e071a051aa04c2
     name: test_helm_valid_a
@@ -284,7 +329,7 @@ entries:
           type: pulsar
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.258512+04:00"
+    created: "2023-08-31T14:41:04.8736+04:00"
     description: A Helm chart for Kubernetes
     digest: 398e1d3bb194cb725d5d4aeffd1f027fb1617bf50985537d9d1344f8c0278526
     name: test_helm_valid_a
@@ -298,7 +343,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.258187+04:00"
+    created: "2023-08-31T14:41:04.873289+04:00"
     description: A Helm chart for Kubernetes
     digest: 9fa0701dc5c94e5fc5d9c7c853ce9a485df690de222704c2bb1486da3fa6c311
     name: test_helm_valid_a
@@ -324,7 +369,7 @@ entries:
       someOtherAnnotation: notRampart
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.262565+04:00"
+    created: "2023-08-31T14:41:04.876123+04:00"
     description: A Helm chart for Kubernetes
     digest: fb40c74352cec246854a4d7415108dc6940cb72ea4ffed65b9d7bf2014dc7988
     name: test_helm_valid_b
@@ -348,7 +393,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.26291+04:00"
+    created: "2023-08-31T14:41:04.876962+04:00"
     description: A Helm chart for Kubernetes
     digest: e32f63da74d34a26e9ad69b6d623d349ba2aa110830ecd0ef58f4adaf55469a1
     name: test_helm_valid_b
@@ -372,7 +417,7 @@ entries:
           type: pulsar
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.262146+04:00"
+    created: "2023-08-31T14:41:04.875708+04:00"
     description: A Helm chart for Kubernetes
     digest: 12cac2e1be8774606e405c03602a16550e0ebf8e4555987af653e617c1921153
     name: test_helm_valid_b
@@ -398,7 +443,7 @@ entries:
         notRampart: True
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.261845+04:00"
+    created: "2023-08-31T14:41:04.875387+04:00"
     description: A Helm chart for Kubernetes
     digest: b1ca057e21429a8fabe7d58e7ef12e29eaaff6590cd5b92cf87fd3d093586dad
     name: test_helm_valid_b
@@ -422,7 +467,7 @@ entries:
           type: volume
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-31T14:35:35.261513+04:00"
+    created: "2023-08-31T14:41:04.875075+04:00"
     description: A Helm chart for Kubernetes
     digest: 996fe6e7ed606c57832df665925cfcc64dbb8c86b633857a6553325d386e622b
     name: test_helm_valid_b
@@ -430,4 +475,4 @@ entries:
     urls:
     - test_helm_valid_b-0.1.5.tgz
     version: 0.1.5
-generated: "2023-08-31T14:35:35.25051+04:00"
+generated: "2023-08-31T14:41:04.859223+04:00"

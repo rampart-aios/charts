@@ -1,5 +1,5 @@
 # Helm charts for non-OCI helm 3 clients
-## How to add helm chart from a OCI registry
+## How to add/remove helm chart from an OCI registry
 
 ### 1. Checkout repop and create a feature branch
 ```

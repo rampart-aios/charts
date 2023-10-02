@@ -11,8 +11,10 @@ git checkout -b my_feature
 helm registry login ghcr.io
 ```
 ### 3a. Pull the helm charts from OCI registry
+- Get Helm URL from GitHub Packages: For example: "docker pull ghcr.io/rampart-aios/coordinator/coordinator-chart:0.1.0-33302cec"
+- Pull Helm Chart with pull script
 ```
-helm pull oci://ghcr.io/rampart-aios/rampart-ui-chart/rampart-ui --version 0.2.0-94a6662f
+./scripts/pull.sh "docker pull ghcr.io/rampart-aios/coordinator/coordinator-chart:0.1.0-33302cec"
 ```
 ### 3b. Delete unused snapshot from OCI registry
 ```
